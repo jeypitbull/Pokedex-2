@@ -4,7 +4,9 @@ import './App.css';
 class App extends Component {
   render (){
     return (
-      <div className="App" />
+      <div className="App">
+        <h1>Jeisson Gomez</h1>
+      </div>
     )
   };
 }
