@@ -13,9 +13,9 @@ componentDidMount(){
     const imageUrl = `https://github.com/PokeAPI/sprits/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
     
     this.setState({
-        name: name,
-        imageUrl: imageUrl,
-        pokemonIndex: pokemonIndex
+        name,
+        imageUrl,
+        pokemonIndex
     });
 }
 
@@ -24,7 +24,7 @@ componentDidMount(){
             <div className = 'col-md-3 col-sm-6 mb-5'>
                 <div className = "card">
                     <div className = "card-header">
-                        <h1>{this.state.name}</h1>
+                        <h5>{this.state.pokemonIndex}</h5>
                     </div>
                 </div>
             </div>
