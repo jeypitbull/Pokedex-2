@@ -10,7 +10,9 @@ export default class PokemonCard extends Component {
 state = {
     name: '',
     imageUrl: '',
-    pokemonIndex: ''
+    pokemonIndex: '',
+    imageLoading: true,
+    toManyRequests: false
 };
 
 componentDidMount(){
@@ -35,7 +37,10 @@ componentDidMount(){
 
                     <Sprite
                         className = "card-img-top rounded mx-auto mt-2"
+                        onLoad = {() => this.setState({imageLoading: false})}
+                        onError = {() => this.setState({toManyRequests: true})}
                         src = {this.state.imageUrl}
+                        
                     />
 
                     <div className = "card-body mx-auto">
