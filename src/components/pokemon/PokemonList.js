@@ -26,6 +26,6 @@ export default class PokemonList extends Component {
                   <h1>Loading Pokemon</h1>
                 )}
             </div>
-        )
+        );
     }
 }
