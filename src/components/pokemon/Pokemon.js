@@ -226,7 +226,103 @@ export default class Pokemon extends Component {
                                         .join(' ')}
                                 </h4>
                                 <div className = "row align-items-center">
+                                    <div className = "col-12 col-md-3">hp</div>
+                                    <div className = "col-12 col-md-9">
+                                        <div className = "progress">
+                                            <div
+                                                className = "progress-bar"
+                                                role = "progressBar"
+                                                style = {{
+                                                    width: `${this.state.stats.hp}%`
+                                                }}
+                                                aria-valuenow = "25"
+                                                aria-valuemin = "0"
+                                                aria-valuemax = "100"
+                                                >
+                                                    <small>{this.state.stats.hp}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className = "row align-items-center">
+                                    <div className = "col-12 col-md-3">attack</div>
+                                    <div className = "col-12 col-md-9">
+                                        <div className = "progress">
+                                            <div
+                                                className = "progress-bar"
+                                                role = "progressBar"
+                                                style = {{
+                                                    width: `${this.state.stats.attack}%`
+                                                }}
+                                                aria-valuenow = "25"
+                                                aria-valuemin = "0"
+                                                aria-valuemax = "100"
+                                                >
+                                                    <small>{this.state.stats.attack}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className = "row align-items-center">
+                                    <div className = "col-12 col-md-3">defense</div>
+                                    <div className = "col-12 col-md-9">
+                                        <div className = "progress">
+                                            <div
+                                                className = "progress-bar"
+                                                role = "progressBar"
+                                                style = {{
+                                                    width: `${this.state.stats.defense}%`
+                                                }}
+                                                aria-valuenow = "25"
+                                                aria-valuemin = "0"
+                                                aria-valuemax = "100"
+                                                >
+                                                    <small>{this.state.stats.defense}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className = "row align-items-center">
+                                    <div className = "col-12 col-md-3">speed</div>
+                                    <div className = "col-12 col-md-9">
+                                        <div className = "progress">
+                                            <div
+                                                className = "progress-bar"
+                                                role = "progressBar"
+                                                style = {{
+                                                    width: `${this.state.stats.speed}%`
+                                                }}
+                                                aria-valuenow = "25"
+                                                aria-valuemin = "0"
+                                                aria-valuemax = "100"
+                                                >
+                                                    <small>{this.state.stats.speed}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className = "row align-items-center">
                                     <div className = "col-12 col-md-3">HP</div>
+                                    <div className = "col-12 col-md-9">
+                                        <div className = "progress">
+                                            <div
+                                                className = "progress-bar"
+                                                role = "progressBar"
+                                                style = {{
+                                                    width: `${this.state.stats.hp}%`
+                                                }}
+                                                aria-valuenow = "25"
+                                                aria-valuemin = "0"
+                                                aria-valuemax = "100"
+                                                >
+                                                    <small>{this.state.stats.hp}</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
