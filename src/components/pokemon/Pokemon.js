@@ -106,12 +106,13 @@ export default class Pokemon extends Component {
                 .join(' ')
         });
 
-        const evs = pokemonRes.data.stats.filter(stat => {
-            if(stat.effort > 0){
-                return true;
-            }
-            return false;
-        })
+        const evs = pokemonRes.data.stats
+            .filter(stat => {
+                if(stat.effort > 0){
+                    return true;
+                }
+                return false;
+            })
 
         .map(stat => {
             return `${stat.effor} ${stat.stat.name}`
@@ -461,6 +462,16 @@ export default class Pokemon extends Component {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className = "caed-footer text-muted">
+                            Data From {' '}
+                        <a
+                            href = 'https://pokeapi.co/'
+                            target = "_blank"
+                            className = 'card-link'
+                        >
+                            PokeAPI.co
+                        </a>
                     </div>
                 </div>
             </div>
